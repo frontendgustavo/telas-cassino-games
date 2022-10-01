@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide-core.min.css">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="d-flex  bg-full">
+        <!-- MODAL SPACE -->
+
+        <!-- MODAL LOGIN -->
+        <div id="modalLogin" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header d-flex al-center justify-between">
+                    <h3>Faça o Login</h3>
+                    <span class="close btn-close-modal"><img src="assets/img/icon-close.svg" alt=""></span>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="d-flex flex-column">
+                        <div class="box-input d-flex flex-column">
+                            <label for="">Email:</label>
+                            <input type="email" placeholder="joao@gmail.com">
+                        </div>
+                        <div class="box-input d-flex flex-column">
+                            <label for="">Senha:</label>
+                            <input type="password" placeholder="************">
+                        </div>
+                        <div class="box-action-form d-flex flex-column">
+                            <button class="btn btn-action-form">
+                                Logar
+                            </button>
+                            <button class="btn-forget-password">
+                                Esqueceu a senha?
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL Cadastre -->
+        <div id="modalRegister" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header d-flex al-center justify-between">
+                    <h3>Cadastre-se</h3>
+                    <span class="close btn-close-modal-register"><img src="assets/img/icon-close.svg" alt=""></span>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="d-flex flex-column">
+                        <div class="box-input d-flex flex-column">
+                            <label for="">Email:</label>
+                            <input type="email" placeholder="joao@gmail.com">
+                        </div>
+                        <div class="box-input d-flex flex-column">
+                            <label for="">Senha:</label>
+                            <input type="password" placeholder="************">
+                        </div>
+                        <div class="box-action-form d-flex flex-column">
+                            <button class="btn btn-action-form">
+                                Cadastrar
+                            </button>
+                            <button class="btn-forget-password">
+                                Esqueceu a senha?
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- MENU ASIDE DESKTOP -->
+        <aside class="menu-aside">
+            <nav class="menu-items-aside d-flex justify-center flex-column">
+                <div class="logo menu-item-aside">
+                    <img src="assets/img/logo-brand.svg" alt="">
+                </div>
+                <button class="menu-item-aside d-flex al-center active ">
+                    <img src="assets/img/icon-home.svg" alt="">
+                    <p class="text-item-menu d-desktop-none">Home</p>
+                </button>
+                <button class="menu-item-aside d-flex al-center ">
+                    <img src="assets/img/icon-games.svg" alt="">
+                    <p class="text-item-menu d-desktop-none">Top jogos</p>
+                </button>
+                <button class="menu-item-aside d-flex al-center">
+                    <img src="assets/img/icon-rocket.svg" alt="">
+                    <p class="text-item-menu d-desktop-none">Ao vivo</p>
+                </button>
+                <button
+                    class="mt-5 btn btn-menu-mobile-action menu-item-aside d-flex justify-center al-center d-desktop-none"
+                    id="btnModalLogin">
+                    Login
+                </button>
+                <button
+                    class="btn btn-menu-mobile-action menu-item-aside d-flex justify-center al-center d-desktop-none"
+                    id="btnModalRegister">
+                    Registrar
+                </button>
+            </nav>
+        </aside>
+
+        <main>
+            <!-- MENU MOBILE TOP-->
+            <nav class="menu-mobile d-flex justify-between al-center ">
+                <div class="box-brand-menu-mobile d-flex al-center">
+                    <div class="item-brand-menu-mobile icon-menu-mobile">
+                        <button class="btn-menu-mobile">
+                            <img src="assets/img/icon-menu-mobile.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="item-brand-menu-mobile logo-mobile">
+                        <img src="assets/img/logo-brand.svg" alt="">
+                    </div>
+                </div>
+                <div class="box-action-menu-mobile d-flex al-center">
+                    <div class="item-action-menu-mobile ">
+                        <button class="img-profile d-flex al-center">
+                            <img src="assets/img/img-profile.png" alt="">
+                        </button>
+                    </div>
+                    <div class="item-action-menu-mobile">
+                        <div class="money-add d-flex al-center justify-between">
+                            <p>R$ 0,00</p>
+                            <button class="btn btn-add-money d-flex al-center
+                            justify-center"><img src="assets/img/icon-add.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <header class="header-style">
+                <nav class="menu-account d-flex justify-between al-center">
+                    <div class="search d-flex al-center">
+                        <span class="icon-search"><img src="assets/img/icon-search.svg" alt=""></span>
+                        <input class="input-search" type="text" name="" id=""
+                            placeholder="Procure pelo nome do jogo...">
+                    </div>
+                    <div class="items-menu-account d-flex al-center">
+                        <div class="money-add d-flex al-center justify-between">
+                            <p>R$ 0,00</p>
+                            <button class="btn btn-add-money d-flex al-center
+                            justify-center"><img src="assets/img/icon-add.svg" alt=""></button>
+                        </div>
+                        <div>
+                            <button class="btn btn-login" id="btnModalLogin">
+                                Login
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-register" id="btnModalRegister">
+                                Registrar
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- GAMES HIGHLIGTHS -->
+            <section class="games-highlights">
+                <!-- SLIDE -->
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="container-arrows">
+                        <div class="splide__arrows d-flex justify-between box-arrows-splide">
+                            <button class="splide__arrow splide__arrow--prev ">
+                                <img src="assets/img/arrow-prev.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="assets/img/arrow-next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="card-game-highlights">
+                                    <img src="assets/img/img-game-highlight-1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card-game-highlights">
+                                    <img src="assets/img/img-game-highlight-2.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card-game-highlights">
+                                    <img src="assets/img/img-game-highlight-3.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+            </section>
+
+            <!-- Filter Games  -->
+            <section class="filter-games d-flex al-center justify-center">
+                <div class="box-filter-games">
+                    <button class="btn-filter-games active-filter-games">
+                        Todos
+                    </button>
+                    <button class="btn-filter-games">
+                        Ao Vivo
+                    </button>
+                    <button class="btn-filter-games">
+                        Exclusivos
+                    </button>
+                    <button class="btn-filter-games">
+                        Gerais
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- TOP GAMES -->
+            <section class="container-games">
+                <div class="box-title-games d-flex justify-between al-center">
+                    <h2>Top Jogos 🔥</h2>
+                    <div class="box-more-games">
+                        <div class="box-bg-more-games d-flex al-center justify-center">
+                            <p><span class="color-red">1000</span> Jogos</p>
+                            <button class="btn btn-more-games d-flex al-center">
+                                <img src="assets/img/arrow-next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-games">
+                    <section class="games-live">
+                        <!-- SLIDE -->
+                        <section class="box-slide-games-desktop splide" aria-label="Splide Basic HTML Example">
+                            <div class="container-arrows">
+                                <div
+                                    class="splide__arrows d-flex justify-between box-arrows-splide-2 box-arrows-splide">
+                                    <button class="splide__arrow splide__arrow--prev ">
+                                        <img src="assets/img/arrow-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next">
+                                        <img src="assets/img/arrow-next.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-1.png" alt="">
+                                            <h3>Game 1</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-2.png" alt="">
+                                            <h3>Game 2</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-3.png" alt="">
+                                            <h3>Game 3</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-4.png" alt="">
+                                            <h3>Game 4</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-5.png" alt="">
+                                            <h3>Game 5</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-6.png" alt="">
+                                            <h3>Game 6</h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </section>
+                        <!-- END SLIDE -->
+
+                        <!-- SECTION GAMES MOBILE -->
+                        <div class="container-games-mobile">
+                            <div class="box-cards-games-mobile">
+
+                                <button class="card-games-mobile">
+                                    <img src="assets/img/img-game-live-3.png" alt="">
+                                </button>
+
+                                <div class="box-cards-double-games-mobile">
+                                    <button class="card-games-mobile-50">
+                                        <img src="assets/img/img-game-live-1.png" alt="">
+                                    </button>
+                                    <button class="card-games-mobile-50">
+                                        <img src="assets/img/img-game-live-4.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SECTION GAMES MOBILE -->
+                    </section>
+                </div>
+            </section>
+
+            <!-- GAMES LIVE -->
+            <section class="container-games">
+                <div class="box-title-games d-flex justify-between al-center">
+                    <h2>Jogos <span class="color-red">ao vivo</span></h2>
+                    <div class="box-more-games">
+                        <div class="box-bg-more-games d-flex al-center justify-center">
+                            <p><span class="color-red">1000</span> Jogos</p>
+                            <button class="btn btn-more-games d-flex al-center">
+                                <img src="assets/img/arrow-next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-games">
+                    <section class="games-exclusive">
+                        <!-- SLIDE -->
+                        <section class="box-slide-games-desktop splide" aria-label="Splide Basic HTML Example">
+                            <div class="container-arrows">
+                                <div
+                                    class="splide__arrows d-flex justify-between box-arrows-splide box-arrows-splide-2">
+                                    <button class="splide__arrow splide__arrow--prev ">
+                                        <img src="assets/img/arrow-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next">
+                                        <img src="assets/img/arrow-next.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-1.png" alt="">
+                                            <h3>Game 1</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-2.png" alt="">
+                                            <h3>Game 2</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-3.png" alt="">
+                                            <h3>Game 3</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-4.png" alt="">
+                                            <h3>Game 4</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-5.png" alt="">
+                                            <h3>Game 5</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-6.png" alt="">
+                                            <h3>Game 6</h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </section>
+                        <!-- END SLIDE -->
+
+                        <!-- SECTION GAMES MOBILE -->
+                        <div class="container-games-mobile">
+                            <div class="box-cards-games-mobile">
+
+                                <button class="card-games-mobile">
+                                    <img src="assets/img/img-game-live-6.png" alt="">
+                                </button>
+
+                                <div class="box-cards-double-games-mobile">
+                                    <button class="card-games-mobile-50">
+                                        <img src="assets/img/img-game-live-3.png" alt="">
+                                    </button>
+                                    <button class="card-games-mobile-50">
+                                        <img src="assets/img/img-game-live-5.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SECTION GAMES MOBILE -->
+                    </section>
+                </div>
+            </section>
+
+            <!-- GAMES EXCLUSIVOS -->
+            <section class="container-games">
+                <div class="box-title-games d-flex justify-between al-center">
+                    <h2>Jogos Exclusivos</h2>
+                    <div class="box-more-games">
+                        <div class="box-bg-more-games d-flex al-center justify-center">
+                            <p><span class="color-red">1000</span> Jogos</p>
+                            <button class="btn btn-more-games d-flex al-center">
+                                <img src="assets/img/arrow-next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-games">
+                    <section class="games-exclusive">
+                        <!-- SLIDE -->
+                        <section class="box-slide-games-desktop splide" aria-label="Splide Basic HTML Example">
+                            <div class="container-arrows">
+                                <div
+                                    class="splide__arrows d-flex justify-between box-arrows-splide box-arrows-splide-2">
+                                    <button class="splide__arrow splide__arrow--prev ">
+                                        <img src="assets/img/arrow-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next">
+                                        <img src="assets/img/arrow-next.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-1.png" alt="">
+                                            <h3>Game 1</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-2.png" alt="">
+                                            <h3>Game 2</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-3.png" alt="">
+                                            <h3>Game 3</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-4.png" alt="">
+                                            <h3>Game 4</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-5.png" alt="">
+                                            <h3>Game 5</h3>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card-game">
+                                            <img src="assets/img/img-game-live-6.png" alt="">
+                                            <h3>Game 6</h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </section>
+                        <!-- END SLIDE -->
+
+                         <!-- SECTION GAMES MOBILE -->
+                         <div class="container-games-mobile">
+                            <div class="box-cards-games-mobile">
+
+                                <button class="card-games-mobile">
+                                    <img src="assets/img/img-game-live-1.png" alt="">
+                                </button>
+
+                                <div class="box-cards-double-games-mobile">
+                                    <button class="card-games-mobile-50">
+                                        <img src="assets/img/img-game-live-3.png" alt="">
+                                    </button>
+                                    <button class="card-games-mobile-50">
+                                        <img src="assets/img/img-game-live-6.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SECTION GAMES MOBILE -->
+                    </section>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

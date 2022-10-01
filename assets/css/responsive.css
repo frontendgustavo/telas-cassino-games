@@ -1,0 +1,377 @@
+@media screen and (max-width:2000px) {
+    .menu-aside {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .menu-item-aside {
+        padding: 0px;
+    }
+
+    .text-item-menu {
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        padding-left: 16px;
+    }
+
+    .menu-item-aside:hover {
+        background-color: var(--red-color);
+        border-radius: 10px;
+        padding: 0px;
+    }
+
+    .menu-item-aside:nth-child(1):hover {
+        background-color: transparent;
+    }
+
+    .active {
+        background-color: var(--red-color);
+        border-radius: 10px;
+        padding: 0px;
+    }
+
+    .menu-item-aside img {
+        width: 30px;
+        padding-left: 10px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .d-mobile-none {
+        display: none;
+    }
+
+    .d-desktop-none {
+        display: flex;
+    }
+
+    .menu-aside {
+        position: fixed;
+        z-index: 3;
+        width: 0;
+        overflow-x: hidden;
+        height: 100%;
+        transition: .5s;
+    }
+
+    .items-menu-account {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .card-game-highlights {
+        max-width: 550px;
+        height: 280px;
+        border-radius: 20px;
+        margin: 16px;
+    }
+
+    .box-arrows-splide {
+        top: 160px;
+        right: 5px;
+    }
+
+    .box-arrows-splide-2 {
+        top: 150px;
+        right: 5px;
+    }
+
+    .splide__arrow--next img {
+        width: 30px;
+    }
+
+    .btn-filter-games {
+        padding: 12px 8px;
+        margin: 0;
+    }
+
+    .box-title-games h2 {
+        font-size: .9em;
+        width: 150px;
+        padding: 20px 0;
+    }
+
+    .box-bg-more-games {
+        padding: 4px 8px;
+        background-color: var(--gray-light);
+        border-radius: 20px;
+        margin-right: 5px;
+    }
+
+    .box-bg-more-games p {
+        padding: 0;
+        margin: 0;
+        font-size: .8em;
+    }
+
+    .btn-more-games {
+        padding: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .btn-more-games img {
+        width: 20px;
+    }
+
+    .container-games {
+        padding: 16px 0 16px 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /* Modal Content */
+    .modal-content {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        background-color: var(--gray-dark);
+        padding: 0;
+        color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    .card-game-highlights {
+        height: 280px;
+    }
+
+    .box-arrows-splide {
+        top: 170px;
+        right: 5px;
+    }
+
+    .box-arrows-splide-2 {
+        top: 150px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .card-game-highlights {
+        height: 230px;
+    }
+
+    .box-arrows-splide {
+        top: 140px;
+        right: 5px;
+    }
+
+    .box-arrows-splide-2 {
+        top: 150px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container-games-mobile {
+        display: block;
+        padding: 16px 12px 0 0;
+    }
+
+    .box-cards-games-mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+    }
+
+    .card-games-mobile {
+        width: 45%;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .card-games-mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .box-cards-double-games-mobile {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-games-mobile-50 {
+        width: 100%;
+        height: 95px;
+        text-decoration: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .card-games-mobile-50 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .box-slide-games-desktop {
+        display: none;
+    }
+
+    .card-game-highlights {
+        height: 130px;
+    }
+
+    .box-arrows-splide {
+        top: 90px;
+        right: 5px;
+    }
+
+    .box-arrows-splide-2 {
+        top: 150px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width:374px) {
+
+    .box-cards-games-mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 150px;
+    }
+
+    .card-games-mobile {
+        width: 48%;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .card-games-mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .box-cards-double-games-mobile {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-games-mobile-50 {
+        width: 100%;
+        height: 70px;
+    }
+
+    .card-games-mobile-50 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+/* @media screen and (min-width:375px) and (max-width:424px) {
+
+    .box-cards-games-mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 230px;
+    }
+
+    .card-games-mobile {
+        width: 50%;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .card-games-mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .box-cards-double-games-mobile {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-games-mobile-50 {
+        width: 100%;
+        height: 110px;
+    }
+
+    .card-games-mobile-50 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+} */
