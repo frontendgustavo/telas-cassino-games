@@ -3,6 +3,11 @@
         display: block;
     }
 }
+@media screen and (min-width:1440px) {
+    .cards-games-sports {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width:1023px) {
     .menu-item-aside {
@@ -131,6 +136,12 @@
     .container-games {
         padding: 16px 0 16px 16px;
     }
+    .box-title-games h2 {
+        align-items: center;
+    }
+    .box-title-games h2 span {
+        padding-left: 16px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -189,6 +200,28 @@
     .box-arrows-splide-2 {
         top: 150px;
         right: 5px;
+    }
+    .games-sports {
+       flex-direction: column;
+    }
+    .cards-games-sports {
+        width: 100%;
+        justify-content: center;
+    }
+    .list-games-sports {
+        margin: 32px 0;
+        width: 100%;
+    }
+    .card-game-sport-1 {
+        position: relative;
+        left:20px;
+    }
+    .card-game-sport-2 {
+        right: 20px;
+    }
+    .card-game-sport {
+        width: 250px;
+        height:230px;
     }
 }
 
@@ -280,9 +313,26 @@
         top: 150px;
         right: 5px;
     }
+    .card-game-sport {
+        width: 280px;
+        height: 180px;
+    }
+    .card-game-sport-1 {
+        position: relative;
+        left:20px;
+    }
+    .card-game-sport-2 {
+        right: 20px;
+    }
+    .box-items-games-sports {
+ flex-direction: column;
+    }
+    .items-games-sports {
+        width: auto;
+    }
 }
 
-@media screen and (max-width:374px) {
+@media screen and (max-width:375px) {
 
     .box-cards-games-mobile {
         display: flex;
@@ -326,6 +376,10 @@
         height: 100%;
         object-fit: cover;
         border-radius: 15px;
+    }
+    .card-game-sport {
+        width: 250px;
+        height: 150px;
     }
 }
 

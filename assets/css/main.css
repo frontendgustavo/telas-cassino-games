@@ -368,6 +368,9 @@ button.splide__arrow {
     text-align: center;
     font-size: 1.2em;
 }
+.box-title-games h2 span {
+    margin-right: 16px;
+}
 
 .box-games {
     padding-left: 16px;
@@ -565,3 +568,53 @@ button.splide__arrow {
     border: none;
     color: #7E7E7E;
 }
+.games-sports {
+    align-items: stretch;
+}
+.box-games-sports {
+    padding: 32px 16px;
+}
+
+.cards-games-sports {
+    width: 45%;
+}
+.list-games-sports {
+    width: 50%;
+}
+.box-items-games-sports {
+    display: flex;
+}
+.items-games-sports {
+    background-color: #111111;
+    width: 100%;
+    border-radius: 10px;
+    margin: 16px 8px;
+    padding: 12px;
+    text-decoration: none;
+    color: #Fff;
+}
+.items-games-sports img {
+    margin-right: 32px;
+}
+.items-games-sports h4 {
+    margin: 0;
+}
+.card-game-sport {
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(100% 0, 70% 100%, 0 100%, 0 0);
+    border-radius: 10px;
+}
+.card-game-sport-2 {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 30% 0);
+    position: relative;
+    right: 40px;
+}
+.card-game-sport img {
+   width: 100%;
+   height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
