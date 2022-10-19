@@ -313,22 +313,23 @@ button.splide__arrow {
 
 .btn-filter-games {
     margin: 0 8px;
-    padding: 12px 18px;
-    background-color: transparent;
+    padding: 16px 20px;
+    background-color: var(--red-color);
     border: none;
     color: #fff;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background-color .5s;
+}
+.btn-filter-games img {
+    width: 16px;
+    margin-right: 8px;
 }
 
 .btn-filter-games:hover {
-    background-color: var(--red-color);
+    background-color: #c1141a
 }
 
-.active-filter-games {
-    background-color: var(--red-color);
-}
 
 .box-bg-more-games {
     padding: 12px 4px 12px 12px;
