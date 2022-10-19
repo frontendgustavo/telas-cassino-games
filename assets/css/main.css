@@ -85,9 +85,8 @@ main {
     border: none;
     background-color: #161616;
     text-decoration: none;
-    padding: 8px;
+    padding: 4px 8px;
     border-radius: 10px;
-    transition: background-color .6s;
 }
 
 .text-item-menu {
@@ -101,24 +100,35 @@ main {
 
 .menu-item-aside img {
     width: 40px;
-   
+    transition: all .3s;
+    padding: 4px 8px;
+    border-radius: 10px;
 }
 
-.menu-item-aside:hover {
+.menu-item-aside:hover img {
     background-color: var(--red-color);
     border-radius: 10px;
-    padding: 8px;
+    padding: 4px 8px;
+}
+.menu-item-aside:hover .hover-desk p{
+    display: block;
+    color: #fff;
+    font-weight: 600;
 }
 
-.menu-item-aside:nth-child(1):hover {
+.menu-item-aside:nth-child(1):hover img {
     background-color: transparent;
 }
 
-.active {
-    background-color: var(--red-color);
-    border-radius: 10px;
-    padding: 8px;
+.hover-desk p{
+    padding: 0;
+    color: transparent;
+    margin: 0;
+    transition: all .3s;
+    font-weight: 600;
+    font-size: .8em;
 }
+
 
 /* ################################ */
 /* ################################ */
@@ -313,7 +323,7 @@ button.splide__arrow {
 
 .btn-filter-games {
     margin: 0 8px;
-    padding: 16px 20px;
+    padding: 16px 24px;
     background-color: var(--red-color);
     border: none;
     color: #fff;
@@ -324,6 +334,16 @@ button.splide__arrow {
 .btn-filter-games img {
     width: 16px;
     margin-right: 8px;
+    padding: 0;
+}
+.btn-filter-games p {
+    position: relative;
+    top: 2px;
+    padding: 0;
+    margin: 0;
+}
+.icon-live img {
+    width: 25px;
 }
 
 .btn-filter-games:hover {
